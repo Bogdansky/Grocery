@@ -1,0 +1,31 @@
+<mat-card id="product-{{productPrice.id}}">
+    <mat-card-title-group>
+        <mat-card-title>Unknown</mat-card-title>
+        <mat-card-subtitle>Product code: {{productPrice.productCode}}</mat-card-subtitle>
+        <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    </mat-card-title-group>
+    <mat-card-content>
+        <div>
+            Unit price: {{productPrice.unitPrice}}
+        </div>
+        <div *ngIf="productPrice.volumeDiscount" class="volume-discount-expansion">
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-description>Volume discount</mat-panel-description>
+                </mat-expansion-panel-header>
+                <div>
+                    <p>Number for discount: {{productPrice.volumeDiscount.numberForDiscount}}</p>
+                    <p>Volume price: {{productPrice.volumeDiscount.volumePrice}}</p>
+                </div>
+            </mat-expansion-panel>
+        </div>
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <mat-card-actions>
+        
+        <div>
+            <button mat-button mode="indeterminate" (click)="onClick(productPrice.id)">SCAN</button>
+            <span *ngIf="scanningCount > 0" class="scanning-amount">Scanned {{scanningCount}} times</span>
+        </div>
+    </mat-card-actions>
+</mat-card>

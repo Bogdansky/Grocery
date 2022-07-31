@@ -1,0 +1,7 @@
+<div class="root">
+    <div class="product-price-card" *ngFor="let productPrice of data; last as isLast">
+        <div [ngClass]="{'last': isLast}">
+            <app-product [product]="productPrice"></app-product>
+        </div>
+    </div>
+</div>
