@@ -1,9 +1,11 @@
-.root {
-    padding: 5px;
-
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
 
     .product-price-card {
         margin-top: 20px;
+        min-width: 480px;
     }
 
     .last {

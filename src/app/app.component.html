@@ -1,1 +1,22 @@
-<app-products></app-products>
+<div>
+    <app-products></app-products>
+</div>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <!--some buttons and another stuff-->
+    </mat-drawer>
+  
+    <div class="app-content">
+        <app-products></app-products>
+    </div>
+  
+<!--
+    <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+        </button>
+    </div>
+-->
+
+</mat-drawer-container>

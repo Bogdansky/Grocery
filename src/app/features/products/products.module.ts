@@ -5,6 +5,7 @@ import { MatCardModule } from '@angular/material/card'
 
 import { ProductModule } from '../product/product.module';
 import { ProductsComponent } from './component/products.component';
+import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ProductsComponent } from './component/products.component';
     CommonModule,
     MatCardModule,
     ProductModule,
+    MaterialModule,
   ],
   exports: [
     ProductsComponent

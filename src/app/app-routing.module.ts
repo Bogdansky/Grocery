@@ -25,8 +25,17 @@ import { RouterModule,  Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '/products',
     loadChildren: () => import('./features/products/products.module').then(m => m.ProductsModule)
+  },
+  {
+    path: '', 
+    pathMatch: 'full',
+    redirectTo: '/products'
+  },
+  {
+    path: '**',
+    redirectTo: '/products'
   }
 ]
 

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './component/product/product.component';
 
-import { MaterialModule } from 'src/shared/modules/material/material.module';
+import { MaterialModule } from 'src/app/shared/modules/material/material.module';
 
 @NgModule({
   declarations: [

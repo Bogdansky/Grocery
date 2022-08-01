@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductPrice } from 'src/app/models/product-price';
-import MockData from 'src/shared/mock/mock.data';
+import MockData from 'src/app/shared/mock/mock.data';
 
 @Component({
   selector: 'app-products',
